@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+	<title>recipe form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/formScript.js"></script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<form id="recipeForm">
+
+		<div class="formBlock">
+			<label for="name">Recipe Name</label>
+			<input type="text" name="name" id="name"/>
+		</div>
+
+		<div class="formBlock">
+			<label for="summary">Recipe Summary</label>
+			<input type="text" name="summary" id="summary"/>
+		</div>
+
+		<div class="formBlock">	
+			<!-- Make inputs here create a list -->
+			<label for="ingredients">Ingredients</label>
+			<input type="text" name="ingredients"/>
+			<input type="button" name="Next Ingredient" class="btn" id="nxtIngredient" value="Next Ingredient"/>
+		</div>
+
+		<div class="formBlock">
+			<label for="directions">Directions</label>
+			<input type="text" name="directions"/>
+
+			<!-- My thought is that when we click this button, it will save the data from the above field and reset the field so the next direction can be added -->
+			<input type="button" name="Next Direction" class="btn" id="nxtDirection" value="Next Direction"/>
+		</div>
+
+		<input type="submit" name="submit" class="btn" id="btnSubmit" value="Submit" />
+	</form>
+
+</div>
+
+</body>
+</html>
