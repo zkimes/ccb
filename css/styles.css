@@ -1,0 +1,38 @@
+body {
+	background-color: red;
+}
+
+.container {
+	background-color: yellow;
+}
+
+.navbar {
+	float: right;
+}
+
+#logo {
+	height: 80px;
+	background-color: white;
+}
+
+#myCarousel {
+	clear: both;
+}
+
+#featured .span4 {
+	background-color: blue;
+	height: 150px;
+}
+
+.readMore {
+	float: right;
+}
+
+#thumbWrap {
+	background-color: green;
+	height: 100px;
+}
+
+footer {
+	background-color: purple;
+}

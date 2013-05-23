@@ -10,13 +10,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	$result = mysql_query($query) or die(mysql_error());
 
-	
-
 	while($row = mysql_fetch_array($result)) {
 		if ($row["password"] == $password) {
-			print "success";
+			$user[1] = "success";
+			$user[2] =  $row["id"];
+			$json_result = json_encode($user);
+			header('Content-Type: application/json');
+			echo($json_result);
 		}else {
-			print "failure";
+			echo "failure";
 		}
 	}
 

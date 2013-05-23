@@ -13,8 +13,8 @@ $( function() {
 			}
 		}).done( function(data) {
 			console.log(data);
-			if (data === "success") {
-
+			if (data[1] === "success") {
+				localStorage["userId"] = data[2];
 			}
 		});
 		return false;
