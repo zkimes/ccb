@@ -1,13 +1,37 @@
 body {
-	background-color: red;
+	background-color: #f0f0f0;
 }
 
 .container {
-	background-color: yellow;
+	background-color: transparent;
 }
 
 .navbar {
 	float: right;
+	background: #53a4da;
+}
+
+.navbar-inner {
+	background: #53a4da;
+}
+
+.nav {
+	background: #53a4da;
+
+}
+
+.navbar .nav > li > a {
+	color: #fff;
+	font-style: normal;
+	text-shadow: none;
+}
+
+a, a:visited {
+	color: #53a4da;
+}
+
+.nav li a {
+	color: #fff;
 }
 
 #logo {
@@ -16,12 +40,40 @@ body {
 }
 
 #myCarousel {
+	height: 300px;
 	clear: both;
-}
+}x
 
 #featured .span4 {
-	background-color: blue;
-	height: 150px;
+	background-color: #53a4da;
+	height: 220px;
+}
+
+#featured .span4 img {
+	background: #000;
+	float: left;
+	margin: 0 10px 0 10px;
+	position: none;
+	width: 100px;
+	height: 100px;
+}
+
+#featured .span4 .btn {
+	float: right;
+	position: relative;
+	margin-right: 10px;
+}
+
+#featured .span4 p {
+	margin: 10px 10px 10px 10px;	
+}
+
+div.span12 {
+	margin-top: 20px;
+}
+
+.homeRecipe {
+	margin-top: 30px;
 }
 
 .readMore {
@@ -29,10 +81,24 @@ body {
 }
 
 #thumbWrap {
-	background-color: green;
-	height: 100px;
+	background-color: #53a4da;
+	height: 150px;
+	margin-top: 20px;
+}
+
+#thumbWrap img {
+	margin-top: 25px;
+}
+
+#thumbWrap img:first-child {
+	margin-left: 20px;
+
 }
 
 footer {
-	background-color: purple;
+	background-color: transparent;
+}
+
+footer p {
+	text-align: center;
 }
