@@ -6,6 +6,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/styles.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <div class="container">
@@ -18,8 +19,20 @@
           <div class="navbar-inner">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Best-Rated Recipes</a></li>
-              <li><a href="#">Submit a Recipe</a></li>
+              <li><div class="searchContainer">
+                <form id="searchForm">
+
+                  <div class="formBlock">
+                    <label for="search"></label>
+                    <input type="text" name="name" id="search"/>
+                  </div>
+
+                  <div class="resultsList">
+                  </div>
+
+                  <!-- <input type="submit" name="submit" class="btn" id="btnSubmit" value="Submit" /> -->
+                </form>
+              </div></li>
             </ul>
           </div>
         </div>
@@ -36,7 +49,7 @@
         </ol>
         <!-- Carousel items -->
         <div class="carousel-inner">
-          <div class="active item"><img src="http://www.placekitten.com/1000/300" alt=""></div>
+          <div class="active item"><img src="http://www.placekitten.com/1000/200" alt=""></div>
           <div class="item"><img src="http://www.placekitten.com/1000/200" alt=""></div>
           <div class="item"><img src="http://www.placekitten.com/1000/200" alt=""></div>
         </div>
@@ -50,25 +63,13 @@
       <!-- Items below slider -->
       <div class="row" id="featured">
         <div class="span4">
-          <div>
-            <img src="http://www.placekitten.com/100/100" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu mauris risus. Sed porta diam in tellus pellen tesque hendrerit. In nunc nulla, tristique in semper quis, commodo a nisl nisl nisl nisl Curabitur nulla velit...</p>
-          </div>
-          <div class="btn">Read More</div>
+          <div class="btn">Test</div>
         </div>
         <div class="span4">
-          <div>
-            <img src="http://www.placekitten.com/100/100" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu mauris risus. Sed porta diam in tellus pellen tesque hendrerit. In nunc nulla, tristique in semper quis, commodo a nisl nisl nisl nisl Curabitur nulla velit...</p>
-          </div>
-          <div class="btn">Read More</div>
+          <div class="btn">Test</div>
         </div>
         <div class="span4">
-          <div>
-            <img src="http://www.placekitten.com/100/100" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu mauris risus. Sed porta diam in tellus pellen tesque hendrerit. In nunc nulla, tristique in semper quis, commodo a nisl nisl nisl nisl Curabitur nulla velit...</p>
-          </div>
-          <div class="btn">Read More</div>
+          <div class="btn">Test</div>
         </div> 
       </div> 
       <div class="row">
@@ -87,32 +88,30 @@
         </div>
       </div>
 
-      <div class="row homeRecipe">
+      <div class="row">
         <div class="span2" id="imgRecipe1"><img src="http://www.placekitten.com/250/250" alt=""></div>
         <div class="span10">
           <h3>Recipe 1 that is really fascinating</h3>
           <p>If you really want to impress your guests, this is the recipe for you. This beef tenderloin is lightly seasoned and then served up in a great mustard sauce that will make you look like a real pro. Lorst magnust quist altucit magnust</p>
         </div>
-        <div class="readMore"><a href="#">Read More &#187;</a></div>
+        <div class="readMore">Read More ---></div>
       </div>
 
-      <div class="row homeRecipe">
+      <div class="row">
         <div class="span2" id="imgRecipe2"><img src="http://www.placekitten.com/250/250" alt=""></div>
         <div class="span10">
           <h3>Recipe 2 that is really fascinating</h3>
           <p>If you really want to impress your guests, this is the recipe for you. This beef tenderloin is lightly seasoned and then served up in a great mustard sauce that will make you look like a real pro. Lorst magnust quist altucit magnust</p>
         </div>
-        <div class="readMore"><a href"#">Read More &#187;</a></div>
+        <div class="readMore">Read More ---></div>
       </div>
 
       <!-- Bottom thumbslider -->
       <div class="row-fluid" id="thumbWrap">
-        <div class="span2"><img src="http://www.placekitten.com/100/100" alt=""></div>
-        <div class="span2"><img src="http://www.placekitten.com/100/100" alt=""></div>
-        <div class="span2"><img src="http://www.placekitten.com/100/100" alt=""></div>
-        <div class="span2"><img src="http://www.placekitten.com/100/100" alt=""></div>
-        <div class="span2"><img src="http://www.placekitten.com/100/100" alt=""></div>
-        <div class="span2"><img src="http://www.placekitten.com/100/100" alt=""></div>
+        <div class="span3"><img src="http://www.placekitten.com/100/100" alt=""></div>
+        <div class="span3"><img src="http://www.placekitten.com/100/100" alt=""></div>
+        <div class="span3"><img src="http://www.placekitten.com/100/100" alt=""></div>
+        <div class="span3"><img src="http://www.placekitten.com/100/100" alt=""></div>
       </div>
 
 
@@ -121,10 +120,7 @@
       <!-- Footer -->
       <footer>
         <div class="row">
-          <div class="span12">
-            <p>Copyright &copy; 2013 | CCB: How to Cook Four Humans <br />
-              Zane | Virgie | Sam | Cher</p>
-          </div>
+          <div class="span12">COPYRIGHT INFO</div>
         </div>
       </footer>
 
@@ -133,5 +129,7 @@
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+  <script src="js/searchFormScript.js" type="text/javascript" ></script>
+    
   </body>
 </html>
