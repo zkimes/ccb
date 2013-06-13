@@ -1,7 +1,103 @@
 #container {
 	margin:auto;
 	width:60%;
+	min-width:900px;
 }
 .formBlock{
 	margin:15px 0px;
+}
+
+body {
+	background-color: #f0f0f0;
+}
+
+.container {
+	background-color: transparent;
+}
+
+.navbar {
+	float: right;
+	background: #fcb040;
+}
+
+.navbar-inner {
+	background: #fcb040;
+}
+
+.navbar .nav > li > a {
+	color: #fff;
+	font-style: normal;
+	text-shadow: none;
+}
+
+a, a:visited {
+	color: #53a4da;
+}
+
+.nav li a {
+	color: #fff;
+}
+
+#logo {
+	margin:10px 0px 15px 10px;
+}
+
+#myCarousel {
+	height: 300px;
+	clear: both;
+}
+#myCarousel .item{
+	height:300px;
+	overflow:hidden;
+}
+
+#featured .span4 {
+	background: #53a4da;
+	height: 180px;
+}
+
+#featured .span4 img {
+	
+}
+
+#featured .span4 p {
+	margin: 10px 10px 10px 10px;	
+}
+#featured div {
+	overflow:hidden;
+}
+
+div.span12 {
+	margin-top: 20px;
+}
+
+.homeRecipe {
+	margin-top: 30px;
+}
+
+.readMore {
+	float: right;
+}
+
+#thumbWrap {
+	background-color: #aaa;
+	height: 150px;
+	margin-top: 20px;
+}
+
+#thumbWrap img {
+	margin-top: 25px;
+}
+
+#thumbWrap img:first-child {
+	margin-left: 20px;
+
+}
+
+footer {
+	background-color: transparent;
+}
+
+footer p {
+	text-align: center;
 }

@@ -12,11 +12,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$array = array();
 
 	while($row = mysql_fetch_array($result2)) {
-		$array[0] = $row["id"];
-		$array[1] = $row["name"];
-		$array[2] = $row["summary"];
-		$array[3] = $row["ingredients"];
-		$array[4] = $row["steps"];
+		$array[0] = html_entity_decode($row["id"], ENT_QUOTES);
+		$array[1] = html_entity_decode($row["name"], ENT_QUOTES);
+		$array[2] = html_entity_decode($row["summary"], ENT_QUOTES);
+		$array[3] = html_entity_decode($row["prepTime"], ENT_QUOTES);
+		$array[4] = html_entity_decode($row["cookTime"], ENT_QUOTES);
+		$array[5] = html_entity_decode($row["ingredients"], ENT_QUOTES);
+		$array[6] = html_entity_decode($row["steps"], ENT_QUOTES);
 	}
 
 	$json_result = json_encode($array);

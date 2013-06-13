@@ -5,22 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/styles.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/searchFormScript.js" type="text/javascript" ></script>
+    <script src="js/homePage.js" type="text/javascript" ></script>
+    <script src="js/headerStuff.js" type="text/javascript" ></script>
   </head>
   <body>
     <div class="container">
 
       <!-- Topbar stuff -->
       <div class="row">
-      <div class="span3" id="logo">Sweet Logo</div>
-      <div class="span8">
+      <div class="span3" id="logo"><img src="img/logo-130.png" /></div>
+      <div class="span8 pull-right">
         <div class="navbar">
           <div class="navbar-inner">
-            <a class="brand" href="#">Title</a>
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li class="notloggedin"><a href="login.html">Login</a></li>
+              <li class="notloggedin"><a href="signUp.html">Sign Up</a></li>
+              <li><a href="viewRecipes.html">View Recipes</a></li>
+              <li class="loggedin"><a href="recipeform.html">Add a Recipe</a></li>
+              <li><div class="searchContainer">
+                <form id="searchForm">
+
+                  <div class="formBlock">
+                    <input type="text" name="name" id="search"/>
+                  </div>
+
+                  <div id="searchResults">
+                  </div>
+                </form>
+              </div></li>
             </ul>
           </div>
         </div>
@@ -37,9 +53,9 @@
         </ol>
         <!-- Carousel items -->
         <div class="carousel-inner">
-          <div class="active item"><img src="http://www.placekitten.com/1000/200" alt=""></div>
-          <div class="item"><img src="http://www.placekitten.com/1000/200" alt=""></div>
-          <div class="item"><img src="http://www.placekitten.com/1000/200" alt=""></div>
+          <div class="active item"><img src="img/4.jpg" alt=""></div>
+          <div class="item"><img src="img/5.jpg" alt=""></div>
+          <div class="item"><img src="img/1.jpg" alt=""></div>
         </div>
         <!-- Carousel nav -->
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -51,20 +67,20 @@
       <!-- Items below slider -->
       <div class="row" id="featured">
         <div class="span4">
-          <div class="btn">Test</div>
+          <img src="img/1.jpg" />
         </div>
         <div class="span4">
-          <div class="btn">Test</div>
+          <img src="img/2.jpg" />
         </div>
         <div class="span4">
-          <div class="btn">Test</div>
+          <img src="img/3.jpg" />
         </div> 
       </div> 
       <div class="row">
         <div class="span12">
-          <div class="btn">Hot Recipes</div>
-          <div class="btn">Just In</div>
-          <div class="btn">Popular Foods</div>
+          <div class="btn"><a href="viewRecipes.html">Hot Recipes</a></div>
+          <div class="btn"><a href="viewRecipes.html">Just In</a></div>
+          <div class="btn"><a href="viewRecipes.html">Popular Foods</a></div>
         </div>
       </div>
 
@@ -76,22 +92,9 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="span2" id="imgRecipe1"><img src="http://www.placekitten.com/250/250" alt=""></div>
-        <div class="span10">
-          <h3>Recipe 1 that is really fascinating</h3>
-          <p>If you really want to impress your guests, this is the recipe for you. This beef tenderloin is lightly seasoned and then served up in a great mustard sauce that will make you look like a real pro. Lorst magnust quist altucit magnust</p>
-        </div>
-        <div class="readMore">Read More ---></div>
-      </div>
+      <div id="recipes">
 
-      <div class="row">
-        <div class="span2" id="imgRecipe2"><img src="http://www.placekitten.com/250/250" alt=""></div>
-        <div class="span10">
-          <h3>Recipe 2 that is really fascinating</h3>
-          <p>If you really want to impress your guests, this is the recipe for you. This beef tenderloin is lightly seasoned and then served up in a great mustard sauce that will make you look like a real pro. Lorst magnust quist altucit magnust</p>
-        </div>
-        <div class="readMore">Read More ---></div>
+
       </div>
 
       <!-- Bottom thumbslider -->
@@ -117,5 +120,7 @@
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+  <script src="js/searchFormScript.js" type="text/javascript" ></script>
+    
   </body>
 </html>

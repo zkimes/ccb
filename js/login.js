@@ -15,6 +15,7 @@ $( function() {
 			console.log(data);
 			if (data[1] === "success") {
 				localStorage["userId"] = data[2];
+				console.log(localStorage["userId"])
 			}
 		});
 		return false;
