@@ -7,11 +7,11 @@ $( function() {
 	});
 
 	$('#search').focusout(function(){
-		$('#searchResults').hide();
+		//$('#searchResults');
 	});
 
 	var getArray = function(){
-		// e.preventDefault();
+		//e.preventDefault();
 
 		var id = 10;
 		$.ajax({
@@ -47,7 +47,7 @@ $( function() {
 
 		for (i = 0; i < len; i++){
 			if (myArray[i].name.toLowerCase().indexOf(query) !== -1){
-				$resultsList.append("<li><a href='#'>" + myArray[i].name + "</a></li>");
+				$resultsList.append("<li><a href='viewRecipes.html#" + myArray[i].id + " '>" + myArray[i].name + "</a></li>");
 			}
 		}		
 	});
